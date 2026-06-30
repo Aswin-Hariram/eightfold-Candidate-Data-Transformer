@@ -13,9 +13,10 @@ const fs = require('fs');
 const path = require('path');
 const norm = require('../transformer/normalize');
 
-const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
+const EMAIL_RE = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b/g;
 const PHONE_RE = /(?:\+?\d[\d\s().-]{7,}\d)/g;
-const URL_RE = /(?:(?:https?|ftp):\/\/)?(?:www\.)?[\w/\-?=%.]+\.[\w/\-?=%.]+/g;
+// Fixed URL regex - more strict
+const URL_RE = /(?:(?:https?|ftp):\/\/)?(?:www\.)?[a-zA-Z0-9][a-zA-Z0-9-]*(?:\.[a-zA-Z0-9][a-zA-Z0-9-]*)*\.[a-zA-Z]{2,}(?:\/[^\s]*)?/g;
 const YEARS_RE = /(\d+(?:\.\d+)?)\s*\+?\s*(?:years|yrs)\b/i;
 
 const SECTION_HEADS = {
@@ -181,7 +182,23 @@ async function parseBinaryResume({ filename, buffer }) {
   const emails = [...new Set(text.match(EMAIL_RE) || [])].map(norm.normalizeEmail).filter(Boolean);
   const phones = [...new Set(text.match(PHONE_RE) || [])].map((p) => norm.normalizePhone(p)).filter(Boolean);
   const urls = [...new Set(text.match(URL_RE) || [])]
-    .map((u) => { const n = norm.normalizeUrl(u); return n ? { url: n, type: norm.classifyLink(n) } : null; })
+    .filter(url => {
+      // Exclude email addresses, file extensions, and common false positives
+      const lower = url.toLowerCase();
+      if (lower.includes('@') ||
+          lower.includes('gmail.com') ||
+          lower.includes('yahoo.com') ||
+          lower.includes('outlook.com') ||
+          /\.(js|e|pdf|doc|docx|txt|jpg|png|gif|css|html|xml|json|exe|dll|so|dylib|zip|tar|gz)$/.test(lower)) {
+        return false;
+      }
+      // Must have at least one dot and be at least 5 characters long
+      return url.includes('.') && url.length >= 5;
+    })
+    .map((u) => {
+      const n = norm.normalizeUrl(u);
+      return n ? { url: n, type: norm.classifyLink(n) } : null;
+    })
     .filter(Boolean);
 
   const candidate_id = deriveCandidateId(text, filename, emails);

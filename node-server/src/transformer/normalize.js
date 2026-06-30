@@ -49,7 +49,7 @@ function normalizeEmail(raw) {
   const s = String(raw).trim().toLowerCase();
   if (!s) return null;
   // basic RFC-ish check
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s)) return null;
+  if (!/^\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b$/.test(s)) return null;
   return s;
 }
 

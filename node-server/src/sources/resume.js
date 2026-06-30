@@ -83,7 +83,12 @@ function parseResume(content) {
 
   const linksStr = _line(map, 'LINKS') || '';
   const links = linksStr.split(',').map((u) => {
-    const url = norm.normalizeUrl(u);
+    const trimmed = u.trim();
+    // Skip if it looks like an email or file extension
+    if (trimmed.includes('@') || /\.(js|e|pdf|doc|docx|txt|jpg|png|gif|css|html|xml|json)$/i.test(trimmed)) {
+      return null;
+    }
+    const url = norm.normalizeUrl(trimmed);
     return url ? { url, type: norm.classifyLink(url) } : null;
   }).filter(Boolean);
 

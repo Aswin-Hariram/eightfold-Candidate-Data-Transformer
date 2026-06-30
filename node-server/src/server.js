@@ -143,8 +143,8 @@ app.post('/api/transform', async (req, res) => {
 
 app.post('/api/transform/sample', async (req, res) => {
   try {
-    const { config } = req.body || {};
-    const result = await runPipeline({ inputsDir: SAMPLE_DIR, config });
+    const { config, enrich } = req.body || {};
+    const result = await runPipeline({ inputsDir: SAMPLE_DIR, config, enrich });
     res.json({ generated_at: new Date().toISOString(), stats: result.stats, profiles: result.profiles });
   } catch (e) {
     res.status(400).json({ error: e.message });

@@ -7,6 +7,8 @@ import {
   MapPin, Mail, Phone, Briefcase, GraduationCap, Globe, Plus, GitMerge, AlertTriangle,
   Maximize2, Eye, Copy, Check, Download, Braces, LayoutGrid, Columns2,
 } from "lucide-react";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:8002";
 const API = `${BACKEND_URL}/api`;
@@ -222,7 +224,7 @@ function ProfileCard({ profile, jsonZoom, onMaximize }) {
         {email && (
           <div className="flex items-center gap-2 text-sm text-stone-800">
             <Mail size={14} className="text-stone-400 shrink-0"/>
-            <span className="font-mono truncate">{email}</span>
+            <a href={`mailto:${email}`} className="font-mono truncate underline">{email}</a>
           </div>
         )}
         {phone && (
@@ -668,7 +670,7 @@ function FileUploader({ files, setFiles, onPreview }) {
               onClick={() => onPreview && onPreview({ kind: "upload", file: f })}
               className="flex items-center gap-2.5 px-5 py-2.5 hover:bg-stone-50 cursor-pointer transition-colors">
               {iconForFile(f.name)}
-              <span className="text-sm text-stone-800 font-mono truncate flex-1">{f.name}</span>
+              <span className="text-sm text-stone-800 font-mono truncate flex-1 underline">{f.name}</span>
               <span className="text-xs text-stone-400">{Math.round(f.size / 1024)} kb</span>
               <button data-testid={`remove-file-${i}`}
                 onClick={(e) => { e.stopPropagation(); removeAt(i); }}
@@ -720,7 +722,7 @@ function UrlsInput({ urls, setUrls }) {
             return (
               <li key={`${u}-${i}`} className="flex items-center gap-2.5 px-5 py-2.5">
                 {isGH ? <Github size={14}/> : isLI ? <Linkedin size={14} className="text-blue-600"/> : <Globe size={14}/>}
-                <span className="text-sm text-stone-800 font-mono truncate flex-1">{u}</span>
+                <a href={u} target="_blank" rel="noreferrer" className="text-sm text-stone-800 font-mono truncate flex-1 underline">{u}</a>
                 <button data-testid={`remove-url-${i}`}
                   onClick={() => removeAt(i)}
                   className="text-stone-400 hover:text-rose-600">
@@ -753,6 +755,7 @@ export default function App() {
   const [viewMode, setViewMode] = useState("split"); // cards | split | json
   const [maxProfile, setMaxProfile] = useState(null);
   const [preview, setPreview] = useState(null); // { name, size?, content?, loading, error? }
+  const [enrich, setEnrich] = useState(true);
 
   const handleConfigUpload = async (file) => {
     setConfigError(null);
@@ -859,7 +862,7 @@ export default function App() {
     catch (e) { setConfigError(`Config JSON invalid: ${e.message}`); return; }
     setRunning(true);
     try {
-      const { data } = await axios.post(`${API}/transform/sample`, { config: cfg });
+      const { data } = await axios.post(`${API}/transform/sample`, { config: cfg, enrich });
       setResult(data);
     } catch (e) {
       setConfigError(e.response?.data?.error || e.message);
@@ -879,6 +882,7 @@ export default function App() {
     uploads.forEach((f) => fd.append("files", f));
     fd.append("config", JSON.stringify(cfg));
     fd.append("urls", JSON.stringify(urls));
+    fd.append("enrich", enrich);
     setRunning(true);
     try {
       const { data } = await axios.post(`${API}/transform/upload`, fd, {
@@ -992,6 +996,11 @@ export default function App() {
                 <UrlsInput urls={urls} setUrls={setUrls} />
               </div>
             )}
+          </div>
+
+          <div className="flex items-center space-x-2">
+            <Switch id="enrichment-toggle" checked={enrich} onCheckedChange={setEnrich} />
+            <Label htmlFor="enrichment-toggle">Enable Enrichment</Label>
           </div>
 
           <ConfigEditor
