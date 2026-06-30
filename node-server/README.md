@@ -5,6 +5,7 @@ A production-ready Node.js pipeline that ingests messy candidate data from multi
 The output schema is **runtime-configurable**: pick fields, rename them, attach per-field normalizers, toggle provenance/confidence, and choose a missing-value policy — **all without changing code**.
 
 This package contains the **core pipeline**, the **CLI**, and the optional **Express API** that the React UI talks to.
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/9af754c4-7449-4efa-b384-863a31d6167f" />
 
 ---
 
