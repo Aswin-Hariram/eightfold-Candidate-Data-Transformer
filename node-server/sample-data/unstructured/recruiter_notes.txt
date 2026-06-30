@@ -1,0 +1,67 @@
+CANDIDATE_ID: cand_001
+Spoke with Jane on Tuesday. Currently a Staff Engineer at Acme Corp. ~8 years experience. Strong in Python and Go, deep Kubernetes expertise. Interested in distributed systems roles. Mentioned she also picked up Kafka in the last year. Prefers SF or remote. Reach her at jane.doe@example.com or +1 415 555 0199. LinkedIn: https://linkedin.com/in/janedoe
+
+---
+
+CANDIDATE_ID: cand_002
+Quick chat with John. Currently a Senior Developer at Acme. About 5 years of experience. Loves React and TypeScript. Open to relocation. john.smith@acme.io ~ (415) 222-3344. Strong on AWS and GraphQL.
+
+---
+
+CANDIDATE_ID: cand_003
+Priya is currently a ML Engineer at Sigmoid AI. ~4 years experience. Focuses on NLP and PyTorch. Reachable at priya@startup.in. Github: https://github.com/priyapatel
+
+---
+
+CANDIDATE_ID: cand_004
+Carlos. Currently a Senior Frontend Engineer at Mercado Libre. About 8 yrs. Strong TypeScript, React, Next.js. Reachable at carlos@dev.mx. He's also open to remote US roles.
+
+---
+
+CANDIDATE_ID: cand_005
+Mei is currently a Senior Data Engineer at Grab. 6 years. Python, Kafka, SQL. Reach her at mei.chen@workmail.com.
+
+---
+
+CANDIDATE_ID: cand_006
+Amir. Currently a Backend Engineer at Cafe Bazaar. ~3 years. Go, Docker, Kubernetes. amir@example.ir. He doesn't have a phone listed publicly.
+
+---
+
+CANDIDATE_ID: cand_007
+Spoke with Olivia. Currently an Engineering Manager at Monzo. 11 years experience. Strong Python, mentoring, architecture. olivia.brown@cmail.uk. +44 20 7946 0958.
+
+---
+
+CANDIDATE_ID: cand_008
+Lukas, Berlin. Currently a Site Reliability Engineer at Zalando. ~9 yrs. AWS, Kubernetes, Terraform, Go. lukas@hub.de. https://github.com/lukasm
+
+---
+
+CANDIDATE_ID: cand_009
+Sara. Currently a Data Scientist at Nubank. 5 years. Machine Learning, scikit-learn, Python, SQL. sara.lima@labs.br. +55 11 91234-5678.
+
+---
+
+CANDIDATE_ID: cand_010
+Akira. Currently a Senior iOS Engineer at Rakuten. About 7 years. Swift and iOS expert. akira.t@mailbox.jp.
+
+---
+
+CANDIDATE_ID: cand_012
+Hana. Currently a AI Research Engineer at Naver. 3 years. Deep Learning and NLP focus. hana.park@kaist.kr. https://github.com/hanapark
+
+---
+
+CANDIDATE_ID: cand_013
+Found a promising candidate from a referral but no other source has him yet. Name is unclear, possibly "R. Williams". 6 years in Python and SQL. Reach via referral@firm.com. Will follow up next week.
+
+---
+
+CANDIDATE_ID: cand_017
+Spoke with Theo Brennan. Currently a Security Engineer at Cloudflare. About 4 years. Strong in Python and Rust. Reachable at theo.brennan@hackerlabs.io. https://github.com/theo-brennan
+
+---
+
+CANDIDATE_ID: cand_018
+Maya Wong is genuinely excellent — strong Frontend (TypeScript, React, GraphQL). Currently at Notion. About 5 years experience. maya.wong@unicorn.io. https://linkedin.com/in/mayawong

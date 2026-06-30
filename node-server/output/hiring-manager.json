@@ -1,0 +1,1445 @@
+{
+  "generated_at": "2026-06-29T19:58:56.613Z",
+  "stats": {
+    "total_records": 37,
+    "total_candidates": 15,
+    "orphan_records": 0,
+    "files": [
+      {
+        "file": "structured/ats_export.json",
+        "records": 7,
+        "source": "ats_json"
+      },
+      {
+        "file": "structured/recruiters.csv",
+        "records": 11,
+        "source": "recruiter_csv"
+      },
+      {
+        "file": "unstructured/recruiter_notes.txt",
+        "records": 12,
+        "source": "recruiter_notes"
+      },
+      {
+        "file": "unstructured/resume_akira_tanaka.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "unstructured/resume_amir_hossein.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "unstructured/resume_carlos_ramirez.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "unstructured/resume_jane_doe.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "unstructured/resume_sara_lima.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "uploads/resume_diana_lopez.docx",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "uploads/resume_rachel_kim.pdf",
+        "records": 1,
+        "source": "resume"
+      }
+    ]
+  },
+  "profiles": [
+    {
+      "candidate_id": "cand_001",
+      "output": {
+        "candidate_id": "cand_001",
+        "name": "Jane Doe",
+        "headline": "Staff Software Engineer",
+        "skills": [
+          "Go",
+          "Kubernetes",
+          "Python",
+          "PostgreSQL",
+          "Redis",
+          "Kafka"
+        ],
+        "experience": [
+          {
+            "company": "Acme Corp",
+            "title": "Staff Engineer",
+            "start_date": "2022-01",
+            "end_date": null,
+            "location": "San Francisco, CA"
+          },
+          {
+            "company": "Globex",
+            "title": "Senior Engineer",
+            "start_date": "2018-06",
+            "end_date": "2021-12",
+            "location": "Remote"
+          },
+          {
+            "company": "Globex",
+            "title": "Senior Engineer",
+            "start_date": "2018-08",
+            "end_date": "2021-12",
+            "location": "Remote"
+          },
+          {
+            "company": "Initech",
+            "title": "Software Engineer",
+            "start_date": "2015-06",
+            "end_date": "2018-07",
+            "location": "Boston"
+          }
+        ],
+        "education": [
+          {
+            "institution": "MIT",
+            "degree": "BS",
+            "field": "Computer Science",
+            "graduation_date": "2017-06"
+          },
+          {
+            "institution": "MIT",
+            "degree": "BS Computer Science",
+            "field": null,
+            "graduation_date": "2017-01"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "ats_json",
+            "recruiter_csv",
+            "recruiter_notes",
+            "resume"
+          ],
+          "name": [
+            "ats_json",
+            "recruiter_csv",
+            "resume"
+          ],
+          "headline": [
+            "ats_json",
+            "resume"
+          ],
+          "skills": {
+            "go": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "kubernetes": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "python": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "postgresql": [
+              "ats_json",
+              "recruiter_csv",
+              "resume"
+            ],
+            "redis": [
+              "ats_json",
+              "resume"
+            ],
+            "kafka": [
+              "recruiter_notes",
+              "resume"
+            ]
+          },
+          "experience": {
+            "acme corp|staff engineer|2022-01": [
+              "ats_json",
+              "resume"
+            ],
+            "globex|senior engineer|2018-06": [
+              "ats_json"
+            ],
+            "globex|senior engineer|2018-08": [
+              "resume"
+            ],
+            "initech|software engineer|2015-06": [
+              "resume"
+            ]
+          },
+          "education": {
+            "mit|bs": [
+              "ats_json"
+            ],
+            "mit|bs computer science": [
+              "resume"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 0.605,
+          "skills": 1,
+          "experience": 0.895,
+          "education": 0.755
+        },
+        "overall_confidence": 0.874
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_002",
+      "output": {
+        "candidate_id": "cand_002",
+        "name": "John Smith",
+        "headline": "Senior Full Stack Developer",
+        "skills": [
+          "AWS",
+          "React",
+          "JavaScript",
+          "Node.js",
+          "GraphQL",
+          "TypeScript"
+        ],
+        "experience": [
+          {
+            "company": "Acme",
+            "title": "Senior Developer",
+            "start_date": "2021-03",
+            "end_date": null,
+            "location": "Seattle"
+          }
+        ],
+        "education": [
+          {
+            "institution": "University of Washington",
+            "degree": "BS Computer Science",
+            "field": null,
+            "graduation_date": "2019-06"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "ats_json",
+            "recruiter_csv",
+            "recruiter_notes"
+          ],
+          "name": [
+            "ats_json",
+            "recruiter_csv"
+          ],
+          "headline": [
+            "ats_json"
+          ],
+          "skills": {
+            "aws": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "react": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "javascript": [
+              "ats_json",
+              "recruiter_csv"
+            ],
+            "node.js": [
+              "ats_json",
+              "recruiter_csv"
+            ],
+            "graphql": [
+              "ats_json",
+              "recruiter_notes"
+            ],
+            "typescript": [
+              "ats_json",
+              "recruiter_notes"
+            ]
+          },
+          "experience": {
+            "acme|senior developer|2021-03": [
+              "ats_json"
+            ]
+          },
+          "education": {
+            "university of washington|bs computer science": [
+              "ats_json"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 0.491,
+          "skills": 1,
+          "experience": 0.95,
+          "education": 0.95
+        },
+        "overall_confidence": 0.945
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_003",
+      "output": {
+        "candidate_id": "cand_003",
+        "name": "Priya Patel",
+        "headline": "Machine Learning Engineer",
+        "skills": [
+          "NLP",
+          "PyTorch",
+          "Python",
+          "SQL",
+          "TensorFlow"
+        ],
+        "experience": [
+          {
+            "company": "Sigmoid AI",
+            "title": "ML Engineer",
+            "start_date": "2022-04",
+            "end_date": null,
+            "location": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "IIT Bombay",
+            "degree": "M.Tech CS",
+            "field": null,
+            "graduation_date": "2021-05"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "ats_json",
+            "recruiter_csv",
+            "recruiter_notes"
+          ],
+          "name": [
+            "ats_json",
+            "recruiter_csv"
+          ],
+          "headline": [
+            "ats_json"
+          ],
+          "skills": {
+            "nlp": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "pytorch": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "python": [
+              "ats_json",
+              "recruiter_csv"
+            ],
+            "sql": [
+              "ats_json",
+              "recruiter_csv"
+            ],
+            "tensorflow": [
+              "ats_json"
+            ]
+          },
+          "experience": {
+            "sigmoid ai|ml engineer|2022-04": [
+              "ats_json"
+            ]
+          },
+          "education": {
+            "iit bombay|m.tech cs": [
+              "ats_json"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 0.491,
+          "skills": 1,
+          "experience": 0.95,
+          "education": 0.95
+        },
+        "overall_confidence": 0.904
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_004",
+      "output": {
+        "candidate_id": "cand_004",
+        "name": "Carlos Ramirez",
+        "headline": "Senior Frontend Engineer",
+        "skills": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "GraphQL",
+          "CSS",
+          "HTML"
+        ],
+        "experience": [
+          {
+            "company": "Kavak",
+            "title": "Frontend Developer",
+            "start_date": "2017-06",
+            "end_date": "2020-02",
+            "location": "Mexico City"
+          },
+          {
+            "company": "Mercado Libre",
+            "title": "Senior Frontend Engineer",
+            "start_date": "2020-03",
+            "end_date": "present",
+            "location": "Mexico City"
+          }
+        ],
+        "education": [
+          {
+            "institution": "UNAM",
+            "degree": "BS Computer Engineering",
+            "field": null,
+            "graduation_date": "2017-01"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "recruiter_csv",
+            "recruiter_notes",
+            "resume"
+          ],
+          "name": [
+            "recruiter_csv",
+            "resume"
+          ],
+          "headline": [
+            "recruiter_csv",
+            "resume"
+          ],
+          "skills": {
+            "next.js": [
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "react": [
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "typescript": [
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "graphql": [
+              "recruiter_csv",
+              "resume"
+            ],
+            "css": [
+              "resume"
+            ],
+            "html": [
+              "resume"
+            ]
+          },
+          "experience": {
+            "kavak|frontend developer|2017-06": [
+              "resume"
+            ],
+            "mercado libre|senior frontend engineer|2020-03": [
+              "resume"
+            ]
+          },
+          "education": {
+            "unam|bs computer engineering": [
+              "resume"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 0.858,
+          "skills": 1,
+          "experience": 0.56,
+          "education": 0.56
+        },
+        "overall_confidence": 0.867
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_005",
+      "output": {
+        "candidate_id": "cand_005",
+        "name": "Mei Chen",
+        "headline": "Senior Data Engineer",
+        "skills": [
+          "Kafka",
+          "Python",
+          "SQL",
+          "Spark",
+          "Airflow"
+        ],
+        "experience": [
+          {
+            "company": "Grab",
+            "title": "Senior Data Engineer",
+            "start_date": "2020-08",
+            "end_date": null,
+            "location": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "NUS",
+            "degree": "BS Computer Science",
+            "field": null,
+            "graduation_date": "2018-06"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "ats_json",
+            "recruiter_csv",
+            "recruiter_notes"
+          ],
+          "name": [
+            "ats_json",
+            "recruiter_csv"
+          ],
+          "headline": [
+            "ats_json"
+          ],
+          "skills": {
+            "kafka": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "python": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "sql": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "spark": [
+              "ats_json"
+            ],
+            "airflow": [
+              "recruiter_csv"
+            ]
+          },
+          "experience": {
+            "grab|senior data engineer|2020-08": [
+              "ats_json"
+            ]
+          },
+          "education": {
+            "nus|bs computer science": [
+              "ats_json"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 0.491,
+          "skills": 1,
+          "experience": 0.95,
+          "education": 0.95
+        },
+        "overall_confidence": 0.923
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_006",
+      "output": {
+        "candidate_id": "cand_006",
+        "name": "Amir Hossein",
+        "headline": "Backend Engineer",
+        "skills": [
+          "Docker",
+          "Go",
+          "Kubernetes",
+          "PostgreSQL"
+        ],
+        "experience": [
+          {
+            "company": "Cafe Bazaar",
+            "title": "Backend Engineer",
+            "start_date": "2022-09",
+            "end_date": "present",
+            "location": "Tehran"
+          },
+          {
+            "company": "Snapp",
+            "title": "Junior Engineer",
+            "start_date": "2021-07",
+            "end_date": "2022-08",
+            "location": "Tehran"
+          }
+        ],
+        "education": [
+          {
+            "institution": "Sharif University of Technology",
+            "degree": "BS Computer Engineering",
+            "field": null,
+            "graduation_date": "2021-01"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "recruiter_csv",
+            "recruiter_notes",
+            "resume"
+          ],
+          "name": [
+            "recruiter_csv",
+            "resume"
+          ],
+          "headline": [
+            "recruiter_csv",
+            "resume"
+          ],
+          "skills": {
+            "docker": [
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "go": [
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "kubernetes": [
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "postgresql": [
+              "resume"
+            ]
+          },
+          "experience": {
+            "cafe bazaar|backend engineer|2022-09": [
+              "resume"
+            ],
+            "snapp|junior engineer|2021-07": [
+              "resume"
+            ]
+          },
+          "education": {
+            "sharif university of technology|bs computer engineering": [
+              "resume"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 0.858,
+          "skills": 1,
+          "experience": 0.56,
+          "education": 0.56
+        },
+        "overall_confidence": 0.854
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_007",
+      "output": {
+        "candidate_id": "cand_007",
+        "name": "Olivia Brown",
+        "headline": "Engineering Manager",
+        "skills": [
+          "Python",
+          "Architecture",
+          "Leadership",
+          "Mentoring"
+        ],
+        "experience": [
+          {
+            "company": "Monzo",
+            "title": "Engineering Manager",
+            "start_date": "2021-09",
+            "end_date": null,
+            "location": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "Imperial College London",
+            "degree": "MEng",
+            "field": null,
+            "graduation_date": "2013-06"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "ats_json",
+            "recruiter_csv",
+            "recruiter_notes"
+          ],
+          "name": [
+            "ats_json",
+            "recruiter_csv"
+          ],
+          "headline": [
+            "ats_json",
+            "recruiter_csv"
+          ],
+          "skills": {
+            "python": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "architecture": [
+              "ats_json",
+              "recruiter_csv"
+            ],
+            "leadership": [
+              "ats_json",
+              "recruiter_csv"
+            ],
+            "mentoring": [
+              "ats_json"
+            ]
+          },
+          "experience": {
+            "monzo|engineering manager|2021-09": [
+              "ats_json"
+            ]
+          },
+          "education": {
+            "imperial college london|meng": [
+              "ats_json"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 0.886,
+          "skills": 1,
+          "experience": 0.95,
+          "education": 0.95
+        },
+        "overall_confidence": 0.94
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_008",
+      "output": {
+        "candidate_id": "cand_008",
+        "name": "Lukas Müller",
+        "headline": "Site Reliability Engineer",
+        "skills": [
+          "AWS",
+          "Go",
+          "Kubernetes",
+          "Terraform",
+          "Docker"
+        ],
+        "experience": [
+          {
+            "company": "Zalando",
+            "title": "SRE",
+            "start_date": "2019-02",
+            "end_date": null,
+            "location": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "TU Berlin",
+            "degree": "MSc CS",
+            "field": null,
+            "graduation_date": "2014-06"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "ats_json",
+            "recruiter_csv",
+            "recruiter_notes"
+          ],
+          "name": [
+            "ats_json",
+            "recruiter_csv"
+          ],
+          "headline": [
+            "ats_json",
+            "recruiter_csv"
+          ],
+          "skills": {
+            "aws": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "go": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "kubernetes": [
+              "ats_json",
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "terraform": [
+              "ats_json",
+              "recruiter_csv"
+            ],
+            "docker": [
+              "ats_json"
+            ]
+          },
+          "experience": {
+            "zalando|sre|2019-02": [
+              "ats_json"
+            ]
+          },
+          "education": {
+            "tu berlin|msc cs": [
+              "ats_json"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 0.886,
+          "skills": 1,
+          "experience": 0.95,
+          "education": 0.95
+        },
+        "overall_confidence": 0.94
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_009",
+      "output": {
+        "candidate_id": "cand_009",
+        "name": "Sara Lima",
+        "headline": "Data Scientist",
+        "skills": [
+          "Machine Learning",
+          "Python",
+          "SQL",
+          "scikit-learn",
+          "PyTorch"
+        ],
+        "experience": [
+          {
+            "company": "iFood",
+            "title": "Data Analyst",
+            "start_date": "2019-08",
+            "end_date": "2020-12",
+            "location": "São Paulo"
+          },
+          {
+            "company": "Nubank",
+            "title": "Data Scientist",
+            "start_date": "2021-01",
+            "end_date": "present",
+            "location": "São Paulo"
+          }
+        ],
+        "education": [
+          {
+            "institution": "USP",
+            "degree": "BS Mathematics",
+            "field": null,
+            "graduation_date": "2017-01"
+          },
+          {
+            "institution": "USP",
+            "degree": "MS Statistics",
+            "field": null,
+            "graduation_date": "2019-01"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "recruiter_csv",
+            "recruiter_notes",
+            "resume"
+          ],
+          "name": [
+            "recruiter_csv",
+            "resume"
+          ],
+          "headline": [
+            "recruiter_csv",
+            "resume"
+          ],
+          "skills": {
+            "machine learning": [
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "python": [
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "sql": [
+              "recruiter_csv",
+              "recruiter_notes",
+              "resume"
+            ],
+            "scikit-learn": [
+              "recruiter_csv",
+              "resume"
+            ],
+            "pytorch": [
+              "resume"
+            ]
+          },
+          "experience": {
+            "ifood|data analyst|2019-08": [
+              "resume"
+            ],
+            "nubank|data scientist|2021-01": [
+              "resume"
+            ]
+          },
+          "education": {
+            "usp|bs mathematics": [
+              "resume"
+            ],
+            "usp|ms statistics": [
+              "resume"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 0.858,
+          "skills": 1,
+          "experience": 0.56,
+          "education": 0.56
+        },
+        "overall_confidence": 0.867
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_010",
+      "output": {
+        "candidate_id": "cand_010",
+        "name": "Akira Tanaka",
+        "headline": "Senior iOS Engineer",
+        "skills": [
+          "Ios",
+          "Objective-c",
+          "Swift"
+        ],
+        "experience": [
+          {
+            "company": "LINE",
+            "title": "iOS Engineer",
+            "start_date": "2017-04",
+            "end_date": "2020-04",
+            "location": "Tokyo"
+          },
+          {
+            "company": "Rakuten",
+            "title": "Senior iOS Engineer",
+            "start_date": "2020-05",
+            "end_date": "present",
+            "location": "Tokyo"
+          }
+        ],
+        "education": [
+          {
+            "institution": "University of Tokyo",
+            "degree": "BS Computer Science",
+            "field": null,
+            "graduation_date": "2017-01"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "recruiter_csv",
+            "recruiter_notes",
+            "resume"
+          ],
+          "name": [
+            "recruiter_csv",
+            "resume"
+          ],
+          "headline": [
+            "recruiter_csv",
+            "resume"
+          ],
+          "skills": {
+            "ios": [
+              "recruiter_csv",
+              "resume"
+            ],
+            "objective-c": [
+              "recruiter_csv",
+              "resume"
+            ],
+            "swift": [
+              "recruiter_csv",
+              "resume"
+            ]
+          },
+          "experience": {
+            "line|ios engineer|2017-04": [
+              "resume"
+            ],
+            "rakuten|senior ios engineer|2020-05": [
+              "resume"
+            ]
+          },
+          "education": {
+            "university of tokyo|bs computer science": [
+              "resume"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 0.858,
+          "skills": 1,
+          "experience": 0.56,
+          "education": 0.56
+        },
+        "overall_confidence": 0.867
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_011",
+      "output": {
+        "candidate_id": "cand_011",
+        "name": "Diego Silva",
+        "headline": "Mystery role",
+        "skills": null,
+        "experience": null,
+        "education": null,
+        "provenance": {
+          "candidate_id": [
+            "recruiter_csv"
+          ],
+          "name": [
+            "recruiter_csv"
+          ],
+          "headline": [
+            "recruiter_csv"
+          ],
+          "skills": {},
+          "experience": {},
+          "education": {}
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 1,
+          "skills": 0,
+          "experience": 0,
+          "education": 0
+        },
+        "overall_confidence": 1
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_012",
+      "output": {
+        "candidate_id": "cand_012",
+        "name": "Hana Park",
+        "headline": "AI Research Engineer",
+        "skills": [
+          "Deep Learning",
+          "NLP",
+          "Python",
+          "PyTorch"
+        ],
+        "experience": [
+          {
+            "company": "Naver",
+            "title": "AI Engineer",
+            "start_date": "2023-01",
+            "end_date": null,
+            "location": null
+          }
+        ],
+        "education": [
+          {
+            "institution": "KAIST",
+            "degree": "MS AI",
+            "field": null,
+            "graduation_date": "2022-12"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "ats_json",
+            "recruiter_notes"
+          ],
+          "name": [
+            "ats_json"
+          ],
+          "headline": [
+            "ats_json"
+          ],
+          "skills": {
+            "deep learning": [
+              "ats_json",
+              "recruiter_notes"
+            ],
+            "nlp": [
+              "ats_json",
+              "recruiter_notes"
+            ],
+            "python": [
+              "ats_json"
+            ],
+            "pytorch": [
+              "ats_json"
+            ]
+          },
+          "experience": {
+            "naver|ai engineer|2023-01": [
+              "ats_json"
+            ]
+          },
+          "education": {
+            "kaist|ms ai": [
+              "ats_json"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 0.812,
+          "skills": 1,
+          "experience": 0.95,
+          "education": 0.95
+        },
+        "overall_confidence": 0.969
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_013",
+      "output": {
+        "candidate_id": "cand_013",
+        "name": null,
+        "headline": null,
+        "skills": [
+          "Python",
+          "SQL"
+        ],
+        "experience": null,
+        "education": null,
+        "provenance": {
+          "candidate_id": [
+            "recruiter_notes"
+          ],
+          "name": [],
+          "headline": [],
+          "skills": {
+            "python": [
+              "recruiter_notes"
+            ],
+            "sql": [
+              "recruiter_notes"
+            ]
+          },
+          "experience": {},
+          "education": {}
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 0,
+          "headline": 0,
+          "skills": 0.22,
+          "experience": 0,
+          "education": 0
+        },
+        "overall_confidence": 0.61
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "uploaded_resume_diana_lopez",
+      "output": {
+        "candidate_id": "uploaded_resume_diana_lopez",
+        "name": "Diana Lopez",
+        "headline": "Machine Learning Engineer",
+        "skills": [
+          "Deep Learning",
+          "NLP",
+          "Python",
+          "PyTorch",
+          "SQL",
+          "TensorFlow"
+        ],
+        "experience": [
+          {
+            "company": "BBVA",
+            "title": "ML Engineer",
+            "start_date": "2020-06",
+            "end_date": "present",
+            "location": "Madrid"
+          },
+          {
+            "company": "Telefonica",
+            "title": "Data Scientist",
+            "start_date": "2018-09",
+            "end_date": "2020-05",
+            "location": "Madrid"
+          }
+        ],
+        "education": [
+          {
+            "institution": "Universidad Politecnica de Madrid",
+            "degree": "MSc Computer Science",
+            "field": null,
+            "graduation_date": "2018-01"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "resume"
+          ],
+          "name": [
+            "resume"
+          ],
+          "headline": [
+            "resume"
+          ],
+          "skills": {
+            "deep learning": [
+              "resume"
+            ],
+            "nlp": [
+              "resume"
+            ],
+            "python": [
+              "resume"
+            ],
+            "pytorch": [
+              "resume"
+            ],
+            "sql": [
+              "resume"
+            ],
+            "tensorflow": [
+              "resume"
+            ]
+          },
+          "experience": {
+            "bbva|ml engineer|2020-06": [
+              "resume"
+            ],
+            "telefonica|data scientist|2018-09": [
+              "resume"
+            ]
+          },
+          "education": {
+            "universidad politecnica de madrid|msc computer science": [
+              "resume"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 1,
+          "skills": 0.49,
+          "experience": 0.49,
+          "education": 0.49
+        },
+        "overall_confidence": 0.694
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "uploaded_resume_rachel_kim",
+      "output": {
+        "candidate_id": "uploaded_resume_rachel_kim",
+        "name": "Rachel Kim",
+        "headline": "Senior Backend Engineer",
+        "skills": [
+          "AWS",
+          "Go",
+          "Kafka",
+          "Kubernetes",
+          "PostgreSQL",
+          "Python",
+          "Redis"
+        ],
+        "experience": [
+          {
+            "company": "Square",
+            "title": "Backend Engineer",
+            "start_date": "2017-08",
+            "end_date": "2021-02",
+            "location": "San Francisco"
+          },
+          {
+            "company": "Stripe",
+            "title": "Senior Backend Engineer",
+            "start_date": "2021-03",
+            "end_date": "present",
+            "location": "San Jose"
+          }
+        ],
+        "education": [
+          {
+            "institution": "Stanford University",
+            "degree": "BS Computer Science",
+            "field": null,
+            "graduation_date": "2017-01"
+          }
+        ],
+        "provenance": {
+          "candidate_id": [
+            "resume"
+          ],
+          "name": [
+            "resume"
+          ],
+          "headline": [
+            "resume"
+          ],
+          "skills": {
+            "aws": [
+              "resume"
+            ],
+            "go": [
+              "resume"
+            ],
+            "kafka": [
+              "resume"
+            ],
+            "kubernetes": [
+              "resume"
+            ],
+            "postgresql": [
+              "resume"
+            ],
+            "python": [
+              "resume"
+            ],
+            "redis": [
+              "resume"
+            ]
+          },
+          "experience": {
+            "square|backend engineer|2017-08": [
+              "resume"
+            ],
+            "stripe|senior backend engineer|2021-03": [
+              "resume"
+            ]
+          },
+          "education": {
+            "stanford university|bs computer science": [
+              "resume"
+            ]
+          }
+        },
+        "field_confidence": {
+          "candidate_id": 1,
+          "name": 1,
+          "headline": 1,
+          "skills": 0.49,
+          "experience": 0.49,
+          "education": 0.49
+        },
+        "overall_confidence": 0.722
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+CANDIDATE_ID: cand_004
+NAME: Carlos Ramirez
+EMAIL: carlos@dev.mx
+PHONE: +52 55 1234 5678
+LOCATION: Mexico City, Mexico
+HEADLINE: Senior Frontend Engineer
+YEARS: 8
+LINKS: https://linkedin.com/in/cramirez
+
+SKILLS:
+- TypeScript
+- React
+- Next.js
+- GraphQL
+- CSS
+- HTML
+
+EXPERIENCE:
+- Mercado Libre | Senior Frontend Engineer | Mar 2020 - Present | Mexico City
+- Kavak | Frontend Developer | Jun 2017 - Feb 2020 | Mexico City
+
+EDUCATION:
+- UNAM | BS Computer Engineering | 2017

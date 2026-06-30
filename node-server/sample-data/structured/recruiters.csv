@@ -1,0 +1,15 @@
+candidate_id,name,email,phone,location,headline,years_experience,skills,linkedin,github
+cand_001,Jane Doe,jane.doe@example.com,555-123-4567,"San Francisco, CA, USA",Senior Backend Engineer,7,"python;go;kubernetes;postgres",https://linkedin.com/in/janedoe,https://github.com/janedoe
+cand_002,JOHN SMITH,john.smith@acme.io,(415) 222-3344,"Seattle, WA, US",Full Stack Developer,5,"javascript,react,nodejs,aws",linkedin.com/in/johnsmith,
+cand_003,priya patel,priya@startup.in,+91 98765 43210,"Bengaluru, KA, India",ML Engineer,4,"python,pytorch,nlp,sql",https://linkedin.com/in/priyapatel,github.com/priyapatel
+cand_004,Carlos Ramirez,carlos@dev.mx,+52 55 1234 5678,"Mexico City, Mexico",Senior Frontend Engineer,8,"typescript;react;nextjs;graphql",,
+cand_005,Mei Chen,mei.chen@workmail.com,+65 9123 4567,"Singapore, Singapore",Data Engineer,6,"python,sql,kafka,airflow",https://linkedin.com/in/meichen,
+cand_006,Amir Hossein,amir@example.ir,,"Tehran, Iran",Backend Engineer,3,"go,docker,k8s",,
+cand_007,Olivia Brown,olivia.brown@cmail.uk,+44 20 7946 0958,"London, UK",Engineering Manager,11,"python,leadership,architecture",https://linkedin.com/in/oliviabrown,
+cand_008,Lukas Müller,lukas@hub.de,+49 30 12345678,"Berlin, Germany",Site Reliability Engineer,9,"k8s,aws,terraform,go",,github.com/lukasm
+cand_009,Sara Lima,sara.lima@labs.br,+55 11 91234-5678,"São Paulo, Brazil",Data Scientist,5,"python,ml,sklearn,sql",,
+cand_010,Akira Tanaka,akira.t@mailbox.jp,+81 3 1234 5678,"Tokyo, Japan",Senior iOS Engineer,7,"swift,objective-c,ios",,
+cand_011,Diego Silva,diego@bad-email,not-a-number,Unknown,Mystery role,not_a_number,"",,
+cand_014,R. Mehta,rohan@stripe-engineering.com,415-555-2266,"San Francisco, CA, USA",Backend Engineer,8,python;go;postgres,linkedin.com/in/rohanmehta,
+,Maya Wong,maya.wong@unicorn.io,+1 650 555 7788,"Palo Alto, CA, USA",Frontend Engineer,5,react;typescript;graphql,linkedin.com/in/mayawong,github.com/maya-wong
+cand_016,YUKI SATO,yuki@kyoto-labs.jp,+81 75 555 1212,"Kyoto, Japan",Robotics Researcher,6,python;ros;c++;machine learning,linkedin.com/in/yukisato,github.com/yuki-sato

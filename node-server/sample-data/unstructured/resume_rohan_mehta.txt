@@ -1,0 +1,22 @@
+CANDIDATE_ID: cand_014
+NAME: Rohan Mehta
+EMAIL: rohan.mehta@conflict.example
+PHONE: +1 415 555 2266
+LOCATION: San Francisco, CA, US
+HEADLINE: Senior Software Engineer
+YEARS: 9
+LINKS: https://linkedin.com/in/rohanmehta, https://github.com/rohanmehta
+
+SKILLS:
+- Python
+- Go
+- AWS
+- Kubernetes
+- PostgreSQL
+
+EXPERIENCE:
+- Stripe | Senior Engineer | Jan 2021 - Present | San Francisco
+- Square | Software Engineer | Aug 2017 - Dec 2020 | San Francisco
+
+EDUCATION:
+- Stanford University | BS Computer Science | 2017

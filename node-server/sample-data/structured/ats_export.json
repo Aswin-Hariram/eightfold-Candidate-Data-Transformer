@@ -1,0 +1,432 @@
+[
+  {
+    "candidate_id": "cand_001",
+    "full_name": "Jane Doe",
+    "emails": [
+      "jane.doe@example.com",
+      "jane@oldcompany.com"
+    ],
+    "phones": [
+      "+14155550199"
+    ],
+    "location": "San Francisco, CA, US",
+    "headline": "Staff Software Engineer",
+    "years_experience": 8,
+    "skills": [
+      "Python",
+      "Go",
+      "Kubernetes",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "links": [
+      {
+        "url": "https://linkedin.com/in/janedoe",
+        "type": "linkedin"
+      },
+      {
+        "url": "https://github.com/janedoe",
+        "type": "github"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Acme Corp",
+        "title": "Staff Engineer",
+        "start_date": "2022-01",
+        "end_date": null,
+        "location": "San Francisco, CA"
+      },
+      {
+        "company": "Globex",
+        "title": "Senior Engineer",
+        "start_date": "2018-06",
+        "end_date": "2021-12",
+        "location": "Remote"
+      }
+    ],
+    "education": [
+      {
+        "institution": "MIT",
+        "degree": "BS",
+        "field": "Computer Science",
+        "graduation_date": "2017-06"
+      }
+    ]
+  },
+  {
+    "candidate_id": "cand_002",
+    "full_name": "John Smith",
+    "emails": [
+      "john.smith@acme.io"
+    ],
+    "phones": [
+      "+14152223344"
+    ],
+    "location": "Seattle, WA, US",
+    "headline": "Senior Full Stack Developer",
+    "years_experience": 5,
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "AWS",
+      "GraphQL"
+    ],
+    "links": [
+      {
+        "url": "https://linkedin.com/in/johnsmith",
+        "type": "linkedin"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Acme",
+        "title": "Senior Developer",
+        "start_date": "2021-03",
+        "end_date": null,
+        "location": "Seattle"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Washington",
+        "degree": "BS Computer Science",
+        "graduation_date": "2019-06"
+      }
+    ]
+  },
+  {
+    "candidate_id": "cand_003",
+    "full_name": "Priya Patel",
+    "emails": [
+      "priya@startup.in"
+    ],
+    "phones": [
+      "+919876543210"
+    ],
+    "location": "Bengaluru, KA, IN",
+    "headline": "Machine Learning Engineer",
+    "years_experience": 4,
+    "skills": [
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "NLP",
+      "SQL"
+    ],
+    "links": [
+      {
+        "url": "https://github.com/priyapatel",
+        "type": "github"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Sigmoid AI",
+        "title": "ML Engineer",
+        "start_date": "2022-04",
+        "end_date": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "IIT Bombay",
+        "degree": "M.Tech CS",
+        "graduation_date": "2021-05"
+      }
+    ]
+  },
+  {
+    "candidate_id": "cand_005",
+    "full_name": "Mei Chen",
+    "emails": [
+      "mei.chen@workmail.com"
+    ],
+    "phones": [
+      "+6591234567"
+    ],
+    "location": "Singapore, Singapore",
+    "headline": "Senior Data Engineer",
+    "years_experience": 6,
+    "skills": [
+      "Python",
+      "SQL",
+      "Kafka",
+      "Spark"
+    ],
+    "links": [],
+    "experience": [
+      {
+        "company": "Grab",
+        "title": "Senior Data Engineer",
+        "start_date": "2020-08",
+        "end_date": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "NUS",
+        "degree": "BS Computer Science",
+        "graduation_date": "2018-06"
+      }
+    ]
+  },
+  {
+    "candidate_id": "cand_007",
+    "full_name": "Olivia Brown",
+    "emails": [
+      "olivia.brown@cmail.uk"
+    ],
+    "phones": [
+      "+442079460958"
+    ],
+    "location": "London, GB",
+    "headline": "Engineering Manager",
+    "years_experience": 11,
+    "skills": [
+      "Python",
+      "Leadership",
+      "Architecture",
+      "Mentoring"
+    ],
+    "links": [
+      {
+        "url": "https://linkedin.com/in/oliviabrown",
+        "type": "linkedin"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Monzo",
+        "title": "Engineering Manager",
+        "start_date": "2021-09",
+        "end_date": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "Imperial College London",
+        "degree": "MEng",
+        "graduation_date": "2013-06"
+      }
+    ]
+  },
+  {
+    "candidate_id": "cand_008",
+    "full_name": "Lukas M\u00fcller",
+    "emails": [
+      "lukas@hub.de"
+    ],
+    "phones": [
+      "+493012345678"
+    ],
+    "location": "Berlin, DE",
+    "headline": "Site Reliability Engineer",
+    "years_experience": 9,
+    "skills": [
+      "Kubernetes",
+      "Terraform",
+      "AWS",
+      "Go",
+      "Docker"
+    ],
+    "links": [
+      {
+        "url": "https://github.com/lukasm",
+        "type": "github"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Zalando",
+        "title": "SRE",
+        "start_date": "2019-02",
+        "end_date": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "TU Berlin",
+        "degree": "MSc CS",
+        "graduation_date": "2014-06"
+      }
+    ]
+  },
+  {
+    "candidate_id": "cand_012",
+    "full_name": "Hana Park",
+    "emails": [
+      "hana.park@kaist.kr"
+    ],
+    "phones": [
+      "+821012345678"
+    ],
+    "location": "Seoul, KR",
+    "headline": "AI Research Engineer",
+    "years_experience": 3,
+    "skills": [
+      "Python",
+      "PyTorch",
+      "NLP",
+      "Deep Learning"
+    ],
+    "links": [
+      {
+        "url": "https://github.com/hanapark",
+        "type": "github"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Naver",
+        "title": "AI Engineer",
+        "start_date": "2023-01",
+        "end_date": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "KAIST",
+        "degree": "MS AI",
+        "graduation_date": "2022-12"
+      }
+    ]
+  },
+  {
+    "candidate_id": "cand_014",
+    "full_name": "ROHAN MEHTA",
+    "emails": [
+      "rohan@stripe-engineering.com",
+      "rohan.mehta@conflict.example"
+    ],
+    "phones": [
+      "+14155552266"
+    ],
+    "location": "San Francisco, CA, US",
+    "headline": "Staff Software Engineer",
+    "years_experience": 10,
+    "skills": [
+      "Python",
+      "Go",
+      "AWS",
+      "GraphQL"
+    ],
+    "links": [
+      {
+        "url": "https://github.com/rohanmehta",
+        "type": "github"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Stripe",
+        "title": "Staff Engineer",
+        "start_date": "2021-01",
+        "end_date": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "BS",
+        "field": "CS"
+      }
+    ]
+  },
+  {
+    "candidate_id": "cand_015",
+    "full_name": "Maya M. Wong",
+    "emails": [
+      "maya.wong@unicorn.io"
+    ],
+    "phones": [
+      "+16505557788"
+    ],
+    "location": "Palo Alto, CA, US",
+    "headline": "Senior Frontend Engineer",
+    "years_experience": 6,
+    "skills": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "GraphQL",
+      "CSS"
+    ],
+    "links": [
+      {
+        "url": "https://linkedin.com/in/mayawong",
+        "type": "linkedin"
+      },
+      {
+        "url": "https://github.com/maya-wong",
+        "type": "github"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Notion",
+        "title": "Senior Frontend Engineer",
+        "start_date": "2022-04",
+        "end_date": null,
+        "location": "Palo Alto"
+      },
+      {
+        "company": "Figma",
+        "title": "Frontend Engineer",
+        "start_date": "2019-08",
+        "end_date": "2022-03",
+        "location": "San Francisco"
+      }
+    ],
+    "education": [
+      {
+        "institution": "UC Berkeley",
+        "degree": "BS Computer Science",
+        "graduation_date": "2019-05"
+      }
+    ]
+  },
+  {
+    "candidate_id": "cand_016",
+    "full_name": "Yuki Sato",
+    "emails": [
+      "yuki@kyoto-labs.jp"
+    ],
+    "phones": [
+      "+81755551212"
+    ],
+    "location": "Kyoto, Japan",
+    "headline": "Senior Robotics Engineer",
+    "years_experience": 7,
+    "skills": [
+      "Python",
+      "C++",
+      "Machine Learning",
+      "ROS",
+      "Deep Learning"
+    ],
+    "links": [
+      {
+        "url": "https://github.com/yuki-sato",
+        "type": "github"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Sony AI",
+        "title": "Robotics Researcher",
+        "start_date": "2020-04",
+        "end_date": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "Kyoto University",
+        "degree": "PhD Robotics",
+        "graduation_date": "2020-03"
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f4;
+  color: #1c1917;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif {
+  font-family: "Cormorant Garamond", "EB Garamond", ui-serif, Georgia, serif;
+  font-weight: 500;
+}
+
+code, pre, .font-mono {
+  font-family: "JetBrains Mono", "Fira Code", source-code-pro, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  :root {
+    --background: 60 9% 96%;
+    --foreground: 24 9% 10%;
+    --primary: 24 9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --border: 20 5% 88%;
+  }
+}
+
+::selection {
+  background: #1c1917;
+  color: #fafaf9;
+}

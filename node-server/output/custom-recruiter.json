@@ -1,0 +1,1299 @@
+{
+  "generated_at": "2026-06-30T07:14:37.305Z",
+  "stats": {
+    "total_records": 73,
+    "total_candidates": 19,
+    "orphan_records": 0,
+    "files": [
+      {
+        "file": "structured/ats_export.json",
+        "records": 10,
+        "source": "ats_json"
+      },
+      {
+        "file": "structured/recruiters.csv",
+        "records": 14,
+        "source": "recruiter_csv"
+      },
+      {
+        "file": "unstructured/recruiter_notes.txt",
+        "records": 14,
+        "source": "recruiter_notes"
+      },
+      {
+        "file": "unstructured/resume_akira_tanaka.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "unstructured/resume_amir_hossein.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "unstructured/resume_carlos_ramirez.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "unstructured/resume_jane_doe.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "unstructured/resume_rohan_mehta.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "unstructured/resume_sara_lima.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "unstructured/resume_theo_brennan.txt",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "uploads/resume_diana_lopez.docx",
+        "records": 1,
+        "source": "resume"
+      },
+      {
+        "file": "uploads/resume_rachel_kim.pdf",
+        "records": 1,
+        "source": "resume"
+      }
+    ],
+    "enrichment": {
+      "github": 12,
+      "linkedin": 14,
+      "failed": 12,
+      "errors": [
+        "GitHub /users/lukasm → 403",
+        "GitHub /users/yuki-sato → 403",
+        "GitHub /users/hanapark → 403",
+        "GitHub /users/janedoe → 403",
+        "GitHub /users/maya-wong → 403",
+        "GitHub /users/maya-wong → 403",
+        "GitHub /users/saralima → 403",
+        "GitHub /users/rohanmehta → 403",
+        "GitHub /users/priyapatel → 403",
+        "GitHub /users/theo-brennan → 403",
+        "GitHub /users/amirh → 403",
+        "GitHub /users/theo-brennan → 403"
+      ]
+    },
+    "resolution": {
+      "groups_before": 22,
+      "groups_after": 19,
+      "merges": [
+        {
+          "from": "derived_maya_wong",
+          "into": "cand_015"
+        },
+        {
+          "from": "cand_018",
+          "into": "cand_015"
+        },
+        {
+          "from": "derived_theo_brennan",
+          "into": "cand_017"
+        }
+      ]
+    }
+  },
+  "profiles": [
+    {
+      "candidate_id": "cand_001",
+      "output": {
+        "id": "cand_001",
+        "name": "Jane Doe",
+        "primary_email": "jane.doe@example.com",
+        "primary_phone": "+14155550199",
+        "country": "US",
+        "city": "San Francisco",
+        "title": "Staff Software Engineer",
+        "yoe": 8,
+        "top_skills": [
+          "Go",
+          "Kafka",
+          "Kubernetes",
+          "PostgreSQL",
+          "Python",
+          "Redis"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "country": 0.664,
+          "city": 0.664,
+          "title": 0.605,
+          "yoe": 0.693,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.871,
+        "conflicts": {
+          "headline": {
+            "winner": "Staff Software Engineer",
+            "winning_sources": [
+              "ats_json",
+              "resume"
+            ],
+            "alternates": [
+              {
+                "value": "Senior Backend Engineer",
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              },
+              {
+                "value": "Staff Engineer at Acme Corp",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          },
+          "location": {
+            "winner": {
+              "city": "San Francisco",
+              "region": "CA",
+              "country": "US",
+              "raw": "San Francisco, CA, US"
+            },
+            "winning_sources": [
+              "ats_json",
+              "resume"
+            ],
+            "alternates": [
+              {
+                "value": {
+                  "city": "San Francisco",
+                  "region": "CA",
+                  "country": "US",
+                  "raw": "San Francisco, CA, USA"
+                },
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          },
+          "years_experience": {
+            "winner": 8,
+            "winning_sources": [
+              "ats_json",
+              "recruiter_notes",
+              "resume"
+            ],
+            "alternates": [
+              {
+                "value": 7,
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_002",
+      "output": {
+        "id": "cand_002",
+        "name": "John Smith",
+        "primary_email": "john.smith@acme.io",
+        "primary_phone": "+14152223344",
+        "country": "US",
+        "city": "Seattle",
+        "title": "Senior Full Stack Developer",
+        "yoe": 5,
+        "top_skills": [
+          "AWS",
+          "GraphQL",
+          "JavaScript",
+          "React",
+          "TypeScript"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "country": 1,
+          "city": 1,
+          "title": 0.491,
+          "yoe": 1,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.936,
+        "conflicts": {
+          "headline": {
+            "winner": "Senior Full Stack Developer",
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": "Full Stack Developer",
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              },
+              {
+                "value": "Senior Developer at Acme",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_003",
+      "output": {
+        "id": "cand_003",
+        "name": "Priya Patel",
+        "primary_email": "priya@startup.in",
+        "primary_phone": "+919876543210",
+        "country": "IN",
+        "city": "Bengaluru",
+        "title": "Machine Learning Engineer",
+        "yoe": 4,
+        "top_skills": [
+          "NLP",
+          "Python",
+          "PyTorch",
+          "SQL",
+          "TensorFlow"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "country": 0.554,
+          "city": 0.554,
+          "title": 0.491,
+          "yoe": 1,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.896,
+        "conflicts": {
+          "headline": {
+            "winner": "Machine Learning Engineer",
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": "ML Engineer",
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              },
+              {
+                "value": "ML Engineer at Sigmoid AI",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          },
+          "location": {
+            "winner": {
+              "city": "Bengaluru",
+              "region": "KA",
+              "country": "IN",
+              "raw": "Bengaluru, KA, IN"
+            },
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": {
+                  "city": "Bengaluru",
+                  "region": "KA",
+                  "country": "IN",
+                  "raw": "Bengaluru, KA, India"
+                },
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_004",
+      "output": {
+        "id": "cand_004",
+        "name": "Carlos Ramirez",
+        "primary_email": "carlos@dev.mx",
+        "primary_phone": "+525512345678",
+        "city": "Mexico City",
+        "title": "Senior Frontend Engineer",
+        "yoe": 8,
+        "top_skills": [
+          "CSS",
+          "GraphQL",
+          "HTML",
+          "React",
+          "TypeScript"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "city": 1,
+          "title": 0.858,
+          "yoe": 1,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.902,
+        "conflicts": {
+          "headline": {
+            "winner": "Senior Frontend Engineer",
+            "winning_sources": [
+              "recruiter_csv",
+              "resume"
+            ],
+            "alternates": [
+              {
+                "value": "Senior Frontend Engineer at Mercado Libre",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_005",
+      "output": {
+        "id": "cand_005",
+        "name": "Mei Chen",
+        "primary_email": "mei.chen@workmail.com",
+        "primary_phone": "+6591234567",
+        "country": "SG",
+        "city": "Singapore",
+        "title": "Senior Data Engineer",
+        "yoe": 6,
+        "top_skills": [
+          "Airflow",
+          "Kafka",
+          "Python",
+          "Spark",
+          "SQL"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "country": 1,
+          "city": 1,
+          "title": 0.491,
+          "yoe": 1,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.936,
+        "conflicts": {
+          "headline": {
+            "winner": "Senior Data Engineer",
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": "Data Engineer",
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              },
+              {
+                "value": "Senior Data Engineer at Grab",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_006",
+      "output": {
+        "id": "cand_006",
+        "name": "Amir Hossein",
+        "primary_email": "amir@example.ir",
+        "city": "Tehran",
+        "title": "Backend Engineer",
+        "yoe": 3,
+        "top_skills": [
+          "Docker",
+          "Go",
+          "Kubernetes",
+          "PostgreSQL"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "city": 1,
+          "title": 0.858,
+          "yoe": 1,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.861,
+        "conflicts": {
+          "headline": {
+            "winner": "Backend Engineer",
+            "winning_sources": [
+              "recruiter_csv",
+              "resume"
+            ],
+            "alternates": [
+              {
+                "value": "Backend Engineer at Cafe Bazaar",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_007",
+      "output": {
+        "id": "cand_007",
+        "name": "Olivia Brown",
+        "primary_email": "olivia.brown@cmail.uk",
+        "primary_phone": "+442079460958",
+        "country": "GB",
+        "city": "London",
+        "title": "Engineering Manager",
+        "yoe": 11,
+        "top_skills": [
+          "Architecture",
+          "Leadership",
+          "Mentoring",
+          "Python"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "country": 0.554,
+          "city": 0.554,
+          "title": 0.886,
+          "yoe": 1,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.932,
+        "conflicts": {
+          "headline": {
+            "winner": "Engineering Manager",
+            "winning_sources": [
+              "ats_json",
+              "recruiter_csv"
+            ],
+            "alternates": [
+              {
+                "value": "Engineering Manager at Monzo",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          },
+          "location": {
+            "winner": {
+              "city": "London",
+              "region": null,
+              "country": "GB",
+              "raw": "London, GB"
+            },
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": {
+                  "city": "London",
+                  "region": null,
+                  "country": "UK",
+                  "raw": "London, UK"
+                },
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_008",
+      "output": {
+        "id": "cand_008",
+        "name": "Lukas Müller",
+        "primary_email": "lukas@hub.de",
+        "primary_phone": "+493012345678",
+        "country": "DE",
+        "city": "Berlin",
+        "title": "Site Reliability Engineer",
+        "yoe": 9,
+        "top_skills": [
+          "AWS",
+          "Docker",
+          "Go",
+          "Kubernetes",
+          "Terraform"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "country": 0.554,
+          "city": 0.554,
+          "title": 0.886,
+          "yoe": 1,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.932,
+        "conflicts": {
+          "headline": {
+            "winner": "Site Reliability Engineer",
+            "winning_sources": [
+              "ats_json",
+              "recruiter_csv"
+            ],
+            "alternates": [
+              {
+                "value": "Site Reliability Engineer at Zalando",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          },
+          "location": {
+            "winner": {
+              "city": "Berlin",
+              "region": null,
+              "country": "DE",
+              "raw": "Berlin, DE"
+            },
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": {
+                  "city": "Berlin",
+                  "region": null,
+                  "country": "DE",
+                  "raw": "Berlin, Germany"
+                },
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_009",
+      "output": {
+        "id": "cand_009",
+        "name": "Sara Lima",
+        "primary_email": "sara.lima@labs.br",
+        "primary_phone": "+5511912345678",
+        "country": "BR",
+        "city": "São Paulo",
+        "title": "Data Scientist",
+        "yoe": 5,
+        "top_skills": [
+          "Machine Learning",
+          "Python",
+          "PyTorch",
+          "scikit-learn",
+          "SQL"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "country": 1,
+          "city": 1,
+          "title": 0.858,
+          "yoe": 1,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.888,
+        "conflicts": {
+          "headline": {
+            "winner": "Data Scientist",
+            "winning_sources": [
+              "recruiter_csv",
+              "resume"
+            ],
+            "alternates": [
+              {
+                "value": "Data Scientist at Nubank",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_010",
+      "output": {
+        "id": "cand_010",
+        "name": "Akira Tanaka",
+        "primary_email": "akira.t@mailbox.jp",
+        "primary_phone": "+81312345678",
+        "country": "JP",
+        "city": "Tokyo",
+        "title": "Senior iOS Engineer",
+        "yoe": 7,
+        "top_skills": [
+          "Ios",
+          "Objective-c",
+          "Swift"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "country": 1,
+          "city": 1,
+          "title": 0.858,
+          "yoe": 1,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.902,
+        "conflicts": {
+          "headline": {
+            "winner": "Senior iOS Engineer",
+            "winning_sources": [
+              "recruiter_csv",
+              "resume"
+            ],
+            "alternates": [
+              {
+                "value": "Senior iOS Engineer at Rakuten",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_011",
+      "output": {
+        "id": "cand_011",
+        "name": "Diego Silva",
+        "city": "Unknown",
+        "title": "Mystery role",
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "city": 1,
+          "title": 1
+        },
+        "overall_confidence": 0.953
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_012",
+      "output": {
+        "id": "cand_012",
+        "name": "Hana Park",
+        "primary_email": "hana.park@kaist.kr",
+        "primary_phone": "+821012345678",
+        "country": "KR",
+        "city": "Seoul",
+        "title": "AI Research Engineer",
+        "yoe": 3,
+        "top_skills": [
+          "Deep Learning",
+          "NLP",
+          "Python",
+          "PyTorch"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "primary_phone": 0.95,
+          "country": 1,
+          "city": 1,
+          "title": 0.812,
+          "yoe": 1,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.969,
+        "conflicts": {
+          "headline": {
+            "winner": "AI Research Engineer",
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": "AI Research Engineer at Naver",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_013",
+      "output": {
+        "id": "cand_013",
+        "primary_email": "referral@firm.com",
+        "yoe": 6,
+        "top_skills": [
+          "Python",
+          "SQL"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "primary_email": 0.22,
+          "yoe": 1,
+          "top_skills": 0.22
+        },
+        "overall_confidence": 0.61
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_014",
+      "output": {
+        "id": "cand_014",
+        "name": "Rohan Mehta",
+        "primary_email": "rohan@stripe-engineering.com",
+        "primary_phone": "+14155552266",
+        "country": "US",
+        "city": "San Francisco",
+        "title": "Staff Software Engineer",
+        "yoe": 10,
+        "top_skills": [
+          "AWS",
+          "Go",
+          "GraphQL",
+          "Kubernetes",
+          "PostgreSQL",
+          "Python"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 0.664,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "country": 0.664,
+          "city": 0.664,
+          "title": 0.418,
+          "yoe": 0.418,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.784,
+        "conflicts": {
+          "full_name": {
+            "winner": "Rohan Mehta",
+            "winning_sources": [
+              "ats_json",
+              "resume"
+            ],
+            "alternates": [
+              {
+                "value": "R. Mehta",
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          },
+          "headline": {
+            "winner": "Staff Software Engineer",
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": "Backend Engineer",
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              },
+              {
+                "value": "Senior Software Engineer",
+                "sources": [
+                  "resume"
+                ],
+                "weight": 0.56
+              }
+            ]
+          },
+          "location": {
+            "winner": {
+              "city": "San Francisco",
+              "region": "CA",
+              "country": "US",
+              "raw": "San Francisco, CA, US"
+            },
+            "winning_sources": [
+              "ats_json",
+              "resume"
+            ],
+            "alternates": [
+              {
+                "value": {
+                  "city": "San Francisco",
+                  "region": "CA",
+                  "country": "US",
+                  "raw": "San Francisco, CA, USA"
+                },
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          },
+          "years_experience": {
+            "winner": 10,
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": 8,
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              },
+              {
+                "value": 9,
+                "sources": [
+                  "resume"
+                ],
+                "weight": 0.56
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_015",
+      "output": {
+        "id": "cand_015",
+        "name": "Maya M. Wong",
+        "primary_email": "maya.wong@unicorn.io",
+        "primary_phone": "+16505557788",
+        "country": "US",
+        "city": "Palo Alto",
+        "title": "Senior Frontend Engineer",
+        "yoe": 5,
+        "top_skills": [
+          "CSS",
+          "GraphQL",
+          "React",
+          "TypeScript"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 0.554,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "country": 0.554,
+          "city": 0.554,
+          "title": 0.554,
+          "yoe": 0.509,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.819,
+        "conflicts": {
+          "full_name": {
+            "winner": "Maya M. Wong",
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": "Maya Wong",
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          },
+          "headline": {
+            "winner": "Senior Frontend Engineer",
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": "Frontend Engineer",
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          },
+          "location": {
+            "winner": {
+              "city": "Palo Alto",
+              "region": "CA",
+              "country": "US",
+              "raw": "Palo Alto, CA, US"
+            },
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": {
+                  "city": "Palo Alto",
+                  "region": "CA",
+                  "country": "US",
+                  "raw": "Palo Alto, CA, USA"
+                },
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          },
+          "years_experience": {
+            "winner": 5,
+            "winning_sources": [
+              "recruiter_csv",
+              "recruiter_notes"
+            ],
+            "alternates": [
+              {
+                "value": 6,
+                "sources": [
+                  "ats_json"
+                ],
+                "weight": 0.95
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_016",
+      "output": {
+        "id": "cand_016",
+        "name": "Yuki Sato",
+        "primary_email": "yuki@kyoto-labs.jp",
+        "primary_phone": "+81755551212",
+        "country": "JP",
+        "city": "Kyoto",
+        "title": "Senior Robotics Engineer",
+        "yoe": 7,
+        "top_skills": [
+          "C++",
+          "Deep Learning",
+          "Machine Learning",
+          "Python",
+          "ROS"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 1,
+          "primary_phone": 1,
+          "country": 1,
+          "city": 1,
+          "title": 0.554,
+          "yoe": 0.554,
+          "top_skills": 1
+        },
+        "overall_confidence": 0.901,
+        "conflicts": {
+          "headline": {
+            "winner": "Senior Robotics Engineer",
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": "Robotics Researcher",
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          },
+          "years_experience": {
+            "winner": 7,
+            "winning_sources": [
+              "ats_json"
+            ],
+            "alternates": [
+              {
+                "value": 6,
+                "sources": [
+                  "recruiter_csv"
+                ],
+                "weight": 0.765
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "cand_017",
+      "output": {
+        "id": "cand_017",
+        "name": "Theo Brennan",
+        "primary_email": "theo.brennan@hackerlabs.io",
+        "primary_phone": "+16175554321",
+        "country": "US",
+        "city": "Cambridge",
+        "title": "Security Engineer",
+        "yoe": 4,
+        "top_skills": [
+          "Docker",
+          "Go",
+          "Linux",
+          "Python",
+          "Rust"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 0.78,
+          "primary_phone": 0.56,
+          "country": 1,
+          "city": 1,
+          "title": 0.718,
+          "yoe": 1,
+          "top_skills": 0.604
+        },
+        "overall_confidence": 0.783,
+        "conflicts": {
+          "headline": {
+            "winner": "Security Engineer",
+            "winning_sources": [
+              "resume"
+            ],
+            "alternates": [
+              {
+                "value": "Security Engineer at Cloudflare",
+                "sources": [
+                  "recruiter_notes"
+                ],
+                "weight": 0.22
+              }
+            ]
+          }
+        }
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "derived_diana_lopez",
+      "output": {
+        "id": "derived_diana_lopez",
+        "name": "Diana Lopez",
+        "primary_email": "diana.lopez@example.es",
+        "title": "Machine Learning Engineer",
+        "yoe": 6,
+        "top_skills": [
+          "Deep Learning",
+          "NLP",
+          "Python",
+          "PyTorch",
+          "SQL",
+          "TensorFlow"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 0.49,
+          "title": 1,
+          "yoe": 1,
+          "top_skills": 0.49
+        },
+        "overall_confidence": 0.745
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "candidate_id": "derived_rachel_kim",
+      "output": {
+        "id": "derived_rachel_kim",
+        "name": "Rachel Kim",
+        "primary_email": "rachel.kim@example.com",
+        "country": "US",
+        "city": "San Jose",
+        "title": "Senior Backend Engineer",
+        "yoe": 8,
+        "top_skills": [
+          "AWS",
+          "Go",
+          "Kafka",
+          "Kubernetes",
+          "PostgreSQL",
+          "Python",
+          "Redis"
+        ],
+        "field_confidence": {
+          "id": 1,
+          "name": 1,
+          "primary_email": 0.49,
+          "country": 1,
+          "city": 1,
+          "title": 1,
+          "yoe": 1,
+          "top_skills": 0.49
+        },
+        "overall_confidence": 0.773
+      },
+      "validation": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  ]
+}

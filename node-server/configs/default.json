@@ -1,0 +1,20 @@
+{
+  "name": "Default canonical output",
+  "description": "Returns the full canonical profile with provenance and confidence on.",
+  "fields": [
+    {"key": "candidate_id", "from": "candidate_id"},
+    {"key": "full_name", "from": "full_name"},
+    {"key": "emails", "from": "emails"},
+    {"key": "phones", "from": "phones"},
+    {"key": "location", "from": "location"},
+    {"key": "headline", "from": "headline"},
+    {"key": "years_experience", "from": "years_experience"},
+    {"key": "skills", "from": "skills"},
+    {"key": "links", "from": "links"},
+    {"key": "experience", "from": "experience"},
+    {"key": "education", "from": "education"}
+  ],
+  "include_provenance": true,
+  "include_confidence": true,
+  "missing_policy": "null"
+}

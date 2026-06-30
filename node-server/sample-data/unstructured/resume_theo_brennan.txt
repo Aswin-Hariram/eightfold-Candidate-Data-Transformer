@@ -1,0 +1,21 @@
+NAME: Theo Brennan
+EMAIL: theo.brennan@hackerlabs.io
+PHONE: +1 617 555 4321
+LOCATION: Cambridge, MA, US
+HEADLINE: Security Engineer
+YEARS: 4
+LINKS: https://linkedin.com/in/theobrennan, https://github.com/theo-brennan
+
+SKILLS:
+- Python
+- Rust
+- Go
+- Linux
+- Docker
+
+EXPERIENCE:
+- Cloudflare | Security Engineer | Jun 2022 - Present | Cambridge
+- HackerOne | Application Security Analyst | Aug 2020 - May 2022 | Remote
+
+EDUCATION:
+- Harvard University | BA Computer Science | 2020

@@ -1,0 +1,18 @@
+{
+  "name": "Recruiter slim view",
+  "description": "Compact view, renames keys, demands phone in E.164, omits missing fields.",
+  "fields": [
+    {"key": "id", "from": "candidate_id"},
+    {"key": "name", "from": "full_name", "normalize": "name"},
+    {"key": "primary_email", "from": "emails[0]", "normalize": "email"},
+    {"key": "primary_phone", "from": "phones[0]", "normalize": "phone"},
+    {"key": "country", "from": "location.country", "normalize": "country"},
+    {"key": "city", "from": "location.city"},
+    {"key": "title", "from": "headline"},
+    {"key": "yoe", "from": "years_experience"},
+    {"key": "top_skills", "from": "skills", "normalize": "skill"}
+  ],
+  "include_provenance": false,
+  "include_confidence": true,
+  "missing_policy": "omit"
+}

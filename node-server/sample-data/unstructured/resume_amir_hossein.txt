@@ -1,0 +1,20 @@
+CANDIDATE_ID: cand_006
+NAME: Amir Hossein
+EMAIL: amir@example.ir
+LOCATION: Tehran, Iran
+HEADLINE: Backend Engineer
+YEARS: 3
+LINKS: https://github.com/amirh
+
+SKILLS:
+- Go
+- Docker
+- Kubernetes
+- PostgreSQL
+
+EXPERIENCE:
+- Cafe Bazaar | Backend Engineer | Sep 2022 - Present | Tehran
+- Snapp | Junior Engineer | Jul 2021 - Aug 2022 | Tehran
+
+EDUCATION:
+- Sharif University of Technology | BS Computer Engineering | 2021

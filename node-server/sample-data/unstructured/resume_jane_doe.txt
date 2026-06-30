@@ -1,0 +1,24 @@
+CANDIDATE_ID: cand_001
+NAME: Jane Doe
+EMAIL: jane.doe@example.com
+PHONE: +1 (415) 555-0199
+LOCATION: San Francisco, CA, US
+HEADLINE: Staff Software Engineer
+YEARS: 8
+LINKS: https://linkedin.com/in/janedoe, https://github.com/janedoe
+
+SKILLS:
+- Python
+- Go
+- Kubernetes
+- PostgreSQL
+- Redis
+- Kafka
+
+EXPERIENCE:
+- Acme Corp | Staff Engineer | Jan 2022 - Present | San Francisco
+- Globex | Senior Engineer | Aug 2018 - Dec 2021 | Remote
+- Initech | Software Engineer | Jun 2015 - Jul 2018 | Boston
+
+EDUCATION:
+- MIT | BS Computer Science | 2017

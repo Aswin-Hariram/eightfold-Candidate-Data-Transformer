@@ -1,0 +1,23 @@
+CANDIDATE_ID: cand_009
+NAME: Sara Lima
+EMAIL: sara.lima@labs.br
+PHONE: +55 11 91234 5678
+LOCATION: São Paulo, Brazil
+HEADLINE: Data Scientist
+YEARS: 5
+LINKS: https://linkedin.com/in/saralima, https://github.com/saralima
+
+SKILLS:
+- Python
+- Machine Learning
+- scikit-learn
+- SQL
+- PyTorch
+
+EXPERIENCE:
+- Nubank | Data Scientist | Jan 2021 - Present | São Paulo
+- iFood | Data Analyst | Aug 2019 - Dec 2020 | São Paulo
+
+EDUCATION:
+- USP | MS Statistics | 2019
+- USP | BS Mathematics | 2017

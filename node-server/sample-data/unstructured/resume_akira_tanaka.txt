@@ -1,0 +1,20 @@
+CANDIDATE_ID: cand_010
+NAME: Akira Tanaka
+EMAIL: akira.t@mailbox.jp
+PHONE: +81 3 1234 5678
+LOCATION: Tokyo, Japan
+HEADLINE: Senior iOS Engineer
+YEARS: 7
+LINKS: https://linkedin.com/in/akirat
+
+SKILLS:
+- Swift
+- Objective-C
+- iOS
+
+EXPERIENCE:
+- Rakuten | Senior iOS Engineer | May 2020 - Present | Tokyo
+- LINE | iOS Engineer | Apr 2017 - Apr 2020 | Tokyo
+
+EDUCATION:
+- University of Tokyo | BS Computer Science | 2017
