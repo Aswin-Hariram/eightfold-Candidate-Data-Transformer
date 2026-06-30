@@ -7,6 +7,7 @@ plus live **GitHub / LinkedIn** enrichment), reconciles conflicts, and emits a s
 
 > Primary interface is the **CLI** (`node-server/`). The React web UI is an optional,
 > nice-to-have visualizer built on the exact same pipeline.
+<img width="2940" height="3380" alt="image" src="https://github.com/user-attachments/assets/3f0ecfd9-aa7c-45bd-b56b-7f82ddfb267b" />
 
 ---
 
