@@ -1,4 +1,4 @@
-# Multi-Source Candidate Data Transformer — One-Pager
+# Multi-Source Candidate Data Transformer 
 
 A deterministic Node.js engine that ingests messy candidate data from many sources
 (structured **CSV / ATS JSON**, unstructured **Resumes TXT/PDF/DOCX**, **Recruiter Notes**,
@@ -20,7 +20,7 @@ detect ─▶ extract ─▶ normalize ─▶ enrich ─▶ resolve ─▶ merge
 |------|--------------|
 | **detect**    | Classify each input by extension/name (`.csv`→ATS recruiter CSV, `.json`→ATS export, `*notes*`→recruiter notes, `.pdf/.docx/.txt`→resume). |
 | **extract**   | Source-specific parsers turn each file into raw `{source, candidate_id, confidence, data}` records. |
-| **normalize** | Pure, deterministic functions clean every field (see §2). Unparsable input becomes `null` — never invented. |
+| **normalize** | Pure, deterministic functions clean every field. Unparsable input becomes `null` — never invented. |
 | **enrich**    | Any `github.com` / `linkedin.com` link found in any record triggers a live API fetch, added as a new source-tagged record. |
 | **resolve**   | Entity resolution (union-find) fuzzy-merges duplicate candidates that lack a shared `candidate_id`. |
 | **merge**     | Per-candidate conflict resolution: confidence-weighted voting for scalars, deduped union for lists, with provenance. |
