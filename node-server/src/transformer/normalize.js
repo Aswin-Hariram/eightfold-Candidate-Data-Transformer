@@ -177,8 +177,8 @@ function normalizeUrl(raw) {
   if (!/^https?:\/\//i.test(s)) s = 'https://' + s;
   try {
     const u = new URL(s);
-    // Require a real hostname with at least one dot AND a 2+ letter TLD
-    if (!/\.[a-z]{2,}$/i.test(u.hostname)) return null;
+    // Require a real hostname with at least one dot
+    if (!u.hostname.includes('.')) return null;
     return u.origin + u.pathname.replace(/\/$/, '') + u.search;
   } catch (_) { return null; }
 }

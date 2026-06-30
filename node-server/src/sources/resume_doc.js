@@ -15,7 +15,7 @@ const norm = require('../transformer/normalize');
 
 const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
 const PHONE_RE = /(?:\+?\d[\d\s().-]{7,}\d)/g;
-const URL_RE = /https?:\/\/[^\s)>,]+/g;
+const URL_RE = /(?:(?:https?|ftp):\/\/)?(?:www\.)?[\w/\-?=%.]+\.[\w/\-?=%.]+/g;
 const YEARS_RE = /(\d+(?:\.\d+)?)\s*\+?\s*(?:years|yrs)\b/i;
 
 const SECTION_HEADS = {
