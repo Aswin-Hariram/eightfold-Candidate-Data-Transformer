@@ -15,6 +15,8 @@ plus live **GitHub / LinkedIn** enrichment), reconciles conflicts, and emits a s
 ```
 detect ─▶ extract ─▶ normalize ─▶ enrich ─▶ resolve ─▶ merge ─▶ project ─▶ validate
 ```
+<img width="1408" height="768" alt="Pipeline" src="https://github.com/user-attachments/assets/a4ccb98b-6a04-4576-9a19-c65721ef6a33" />
+
 
 | Step | What happens |
 |------|--------------|
