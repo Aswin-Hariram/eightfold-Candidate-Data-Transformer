@@ -18,9 +18,15 @@ yarn install                    # or npm install
 # Run the test suite (24 deterministic, offline tests)
 yarn test
 
+
+
+
 # Transform the bundled sample data
 #   → prints JSON to stdout AND auto-saves to outputs/transform-<timestamp>.json
 node src/cli/index.js --sample
+
+# The output is saved to `output/custom-recruiter.json`.
+node src/cli/index.js --inputs sample-data --config configs/custom-recruiter.json --out output/custom-recruiter.json
 
 # Use a named config and a human-readable table view
 node src/cli/index.js --sample --config hiring-manager --format table

@@ -1,0 +1,12 @@
+{
+  "name": "Broken Config",
+  "description": "This is a broken config file for testing.",
+  "fields": [
+    {
+      "key": "full_name",
+      "from": "full_name",
+      "normalize": "uppercase"
+    }
+  ],
+  "missing_policy": "null"
+}

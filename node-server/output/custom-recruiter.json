@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T07:14:37.305Z",
+  "generated_at": "2026-06-30T14:10:05.222Z",
   "stats": {
     "total_records": 73,
     "total_candidates": 19,
@@ -69,20 +69,12 @@
     "enrichment": {
       "github": 12,
       "linkedin": 14,
-      "failed": 12,
+      "failed": 4,
       "errors": [
-        "GitHub /users/lukasm → 403",
-        "GitHub /users/yuki-sato → 403",
-        "GitHub /users/hanapark → 403",
-        "GitHub /users/janedoe → 403",
-        "GitHub /users/maya-wong → 403",
-        "GitHub /users/maya-wong → 403",
-        "GitHub /users/saralima → 403",
-        "GitHub /users/rohanmehta → 403",
-        "GitHub /users/priyapatel → 403",
-        "GitHub /users/theo-brennan → 403",
-        "GitHub /users/amirh → 403",
-        "GitHub /users/theo-brennan → 403"
+        "GitHub /users/theo-brennan → 404",
+        "GitHub /users/maya-wong → 404",
+        "GitHub /users/maya-wong → 404",
+        "GitHub /users/theo-brennan → 404"
       ]
     },
     "resolution": {
@@ -477,22 +469,43 @@
         "title": "Backend Engineer",
         "yoe": 3,
         "top_skills": [
+          "Dart",
           "Docker",
           "Go",
           "Kubernetes",
-          "PostgreSQL"
+          "Objective-c",
+          "PostgreSQL",
+          "Python",
+          "Shell",
+          "TypeScript"
         ],
         "field_confidence": {
           "id": 1,
-          "name": 1,
+          "name": 0.688,
           "primary_email": 1,
           "city": 1,
-          "title": 0.858,
+          "title": 0.618,
           "yoe": 1,
-          "top_skills": 1
+          "top_skills": 0.977
         },
-        "overall_confidence": 0.861,
+        "overall_confidence": 0.834,
         "conflicts": {
+          "full_name": {
+            "winner": "Amir Hossein",
+            "winning_sources": [
+              "recruiter_csv",
+              "resume"
+            ],
+            "alternates": [
+              {
+                "value": "Amir Hardon",
+                "sources": [
+                  "github"
+                ],
+                "weight": 0.6
+              }
+            ]
+          },
           "headline": {
             "winner": "Backend Engineer",
             "winning_sources": [
@@ -500,6 +513,13 @@
               "resume"
             ],
             "alternates": [
+              {
+                "value": "Working at @google ",
+                "sources": [
+                  "github"
+                ],
+                "weight": 0.6
+              },
               {
                 "value": "Backend Engineer at Cafe Bazaar",
                 "sources": [
@@ -702,7 +722,7 @@
           "yoe": 1,
           "top_skills": 1
         },
-        "overall_confidence": 0.888,
+        "overall_confidence": 0.913,
         "conflicts": {
           "headline": {
             "winner": "Data Scientist",
@@ -1119,24 +1139,29 @@
         "title": "Senior Robotics Engineer",
         "yoe": 7,
         "top_skills": [
+          "C",
           "C++",
           "Deep Learning",
+          "Java",
+          "JavaScript",
           "Machine Learning",
+          "Objective-c",
           "Python",
-          "ROS"
+          "ROS",
+          "Ruby"
         ],
         "field_confidence": {
           "id": 1,
           "name": 1,
           "primary_email": 1,
           "primary_phone": 1,
-          "country": 1,
-          "city": 1,
-          "title": 0.554,
+          "country": 0.741,
+          "city": 0.741,
+          "title": 0.41,
           "yoe": 0.554,
           "top_skills": 1
         },
-        "overall_confidence": 0.901,
+        "overall_confidence": 0.857,
         "conflicts": {
           "headline": {
             "winner": "Senior Robotics Engineer",
@@ -1150,6 +1175,39 @@
                   "recruiter_csv"
                 ],
                 "weight": 0.765
+              },
+              {
+                "value": "CEO of obniz Inc.",
+                "sources": [
+                  "github"
+                ],
+                "weight": 0.6
+              }
+            ]
+          },
+          "location": {
+            "winner": {
+              "city": "Kyoto",
+              "region": null,
+              "country": "JP",
+              "raw": "Kyoto, Japan"
+            },
+            "winning_sources": [
+              "ats_json",
+              "recruiter_csv"
+            ],
+            "alternates": [
+              {
+                "value": {
+                  "city": "Tokyo",
+                  "region": null,
+                  "country": null,
+                  "raw": "Tokyo"
+                },
+                "sources": [
+                  "github"
+                ],
+                "weight": 0.6
               }
             ]
           },
