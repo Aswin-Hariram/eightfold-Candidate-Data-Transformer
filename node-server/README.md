@@ -127,7 +127,7 @@ node src/cli/index.js --sample --config hiring-manager
 node src/cli/index.js --sample --config ./my-config.json
 
 # Process specific files or a directory
-node src/cli/index.js --files resume.pdf recruiters.csv notes.txt
+node src/cli/index.js --files sample-data/structured/recruiters.csv
 node src/cli/index.js --inputs ./data --out result.json
 
 # Write to a specific file (and skip the auto-save folder)
