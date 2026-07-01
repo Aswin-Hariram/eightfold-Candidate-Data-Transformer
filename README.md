@@ -1,6 +1,6 @@
 # Multi-Source Candidate Data Transformer
 
-**🔗 Live Demo:** https://eightfold-candidate-data-transformer.vercel.app/
+**🔗 Live Demo:** https://eightfold-candidate-data-transforme.vercel.app/
 
 > Experience the transformer in action by uploading candidate data from multiple sources and generating a unified canonical profile.
 A deterministic Node.js engine that ingests messy candidate data from many sources
