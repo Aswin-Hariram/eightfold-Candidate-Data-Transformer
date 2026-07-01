@@ -23,7 +23,7 @@ function extractHandle(url) {
   return handle;
 }
 
-async function fetchGithubProfile(handle, { fetch = global.fetch, token = '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'  } = {}) {
+async function fetchGithubProfile(handle, { fetch = global.fetch, token = process.env.GITHUB_TOKEN } = {}) {
   const headers = { 'User-Agent': 'candidate-transformer', Accept: 'application/vnd.github+json' };
   if (token) headers.Authorization = `Bearer ${token}`;
 
