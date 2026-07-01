@@ -9,6 +9,28 @@ This package contains the **core pipeline**, the **CLI**, and the optional **Exp
 
 ---
 
+### Step 1: Generate a GitHub Token
+
+1. Sign in to your GitHub account.
+2. Click your profile picture → **Settings**.
+3. Navigate to **Developer settings** → **Personal access tokens**.
+4. Select **Fine-grained tokens** (recommended) and click **Generate new token**.
+5. Configure the token:
+   - **Name:** `candidate-transformer`
+   - **Expiration:** Choose an appropriate expiration date.
+   - **Resource owner:** Your GitHub account.
+   - **Repository access:** **Public repositories** (or **All repositories** if you need to access private repositories).
+6. Click **Generate token**.
+7. **Copy the token immediately.** GitHub only displays it once.
+
+### Step 2: Add the Token as an Environment Variable
+
+Create a `.env` file in the project root:
+
+```env
+GITHUB_TOKEN=github_pat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
 ## 🚀 Quick Start
 
 ```bash
